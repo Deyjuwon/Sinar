@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../assets/sinarlogo.png'
 
 const Header = () => {
 
@@ -15,16 +16,13 @@ const Header = () => {
     { to: '/MyContents', label: 'My Contents' },
     ];
 
-
-
   return (
-    
-    <header>
+    <header className='w-full  h-32 border-2 border-emerald-600 flex items-center justify-between p-4'>
         <div>
-            <img src="" alt="" />
+            <img src={logo} alt="" className='h-16 w-32 object-contain ' />
         </div>
         <div>
-            <ul>
+            <ul className='hidden'>
                 {navItems.map((item, index) => (
                         <NavLink key={index} to={item.to}>
                         <li>{item.label}</li>
@@ -33,8 +31,8 @@ const Header = () => {
             </ul>
 
         </div>
-        {isOpened ? <IoMdClose className='hamburger' size={25} onClick={() => setIsOpened(!isOpened)} /> : <RxHamburgerMenu className='hamburger' size={25} onClick={() => setIsOpened(!isOpened)} />}
-        <div>
+        {isOpened ? <IoMdClose className='' size={25} onClick={() => setIsOpened(!isOpened)} /> : <RxHamburgerMenu className='' size={25} onClick={() => setIsOpened(!isOpened)} />}
+        <div className='hidden'>
             <button>Login</button>
             <button>Sign Up</button>
         </div>
