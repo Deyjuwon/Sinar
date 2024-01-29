@@ -6,10 +6,12 @@ import StartTraining from '../Components/StartTraining'
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-blue-200'>
+     
         <Header />
         <Hero />
         <Discover />
+        
         <StartTraining />
     </div>
   )
