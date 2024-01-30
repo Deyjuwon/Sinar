@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import Discover from '../Components/Discover'
 import StartTraining from '../Components/StartTraining'
+import PopularCourses from '../Components/PopularCourses'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Discover />
         
         <StartTraining />
+        <PopularCourses />
     </div>
   )
 }
