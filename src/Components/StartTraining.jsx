@@ -9,7 +9,7 @@ import Button from './Button';
 
 const StartTraining = () => {
   return (
-    <div className='bg-white  w-10/12  flex flex-col m-auto h-full rounded-md text-center border pb-6'>
+    <div className='bg-white  w-10/12  flex flex-col m-auto h-full rounded-md text-center border pb-7'>
       <ul className='flex flex-wrap bg-white p-2'>
         <li>
           <img src={rec45} alt="Rectangle 45" />
