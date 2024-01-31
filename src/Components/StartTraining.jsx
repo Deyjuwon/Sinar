@@ -9,8 +9,8 @@ import Button from './Button';
 
 const StartTraining = () => {
   return (
-    <div className='bg-white  w-10/12  flex flex-col m-auto h-full rounded-md text-center border pb-7'>
-      <ul className='flex flex-wrap bg-white p-2'>
+    <div className='bg-white  w-358 h-498  flex flex-col m-auto rounded-md text-center border '>
+      <ul className='flex flex-wrap justify-center items-center bg-white pt-2'>
         <li>
           <img src={rec45} alt="Rectangle 45" />
         </li>
@@ -31,8 +31,8 @@ const StartTraining = () => {
         </li>
       </ul>
 
-      <h1 className='font-medium text-28s text-center pb-6 pt-6 '>Start training with the <br /> professional team</h1>
-      <p className='font-medium text-base pb-6 px-7 '>Come on, it's time to stat training now!</p>
+      <h1 className='font-medium text-28s text-center pb-3 pt-6 '>Start training with the <br /> professional team</h1>
+      <p className='font-medium text-base pb-3 px-7 '>Come on, it's time to stat training now!</p>
       <div>
         <Button name='Start training' />
       </div>

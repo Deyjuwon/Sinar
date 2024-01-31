@@ -11,13 +11,13 @@ import like from '../assets/like.png';
 
 const CourseCard = () => {
   return (
-    <div className='bg-white  w-72 h-fit flex flex-col gap-5  px-4 rounded-xl pt-5 pb-4'>
+    <div className='bg-white  w-266 h-379 flex flex-col gap-4  px-4 rounded-xl pt-5 pb-4'>
         <img src={rec49} alt=""  />
         <img src={baghappy} alt="" className='absolute hidden' />
         <div className='flex items-center justify-between'>
-            <div className='bg-dirty-white py-3 px-2 border shadow-lg  flex gap-3 items-center rounded-2xl'>
+            <div className='bg-dirty-white w-116 h-10 border shadow-lg  flex gap-3 items-center justify-center rounded-xl'>
                 <img src={ellipse} alt="" className=' h-2 w-2'   />
-                <p className=' text-base font-medium'>Web Design</p>
+                <p className=' text-sm font-medium'>Web Design</p>
             </div>
             
             <p className='font-semibold text-2xl'>$150</p>
