@@ -8,6 +8,9 @@ export default {
     extend: {
       colors: {
         'dirty-white': '#F5F5F5'
+      },
+      fontSize: {
+        '28s': '28px'
       }
     },
   },
