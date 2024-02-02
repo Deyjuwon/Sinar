@@ -23,7 +23,7 @@ const CourseCard = (props) => {
             <p className='font-semibold text-2xl'>{props.price}</p>
         </div>
 
-        <p className=' font-semibold text-base'>{props.description}</p>
+        <p className=' font-semibold text-sm'>{props.description}</p>
 
         <div className='flex justify-between items-center'>
             <img src={profilePhoto} alt="" className='h-11 w-11' />

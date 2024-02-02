@@ -1,8 +1,8 @@
-const data = [
+const discountedData = [
     {
         id: 1,
         course: 'Web Design',
-        price: '$155',
+        price: '$55',
         profile: '2.5k',
         views: '1.1k',
         likes: '3.0k',
@@ -12,7 +12,7 @@ const data = [
     {
         id: 2,
         course: 'Web Design',
-        price: '$100',
+        price: '$80',
         profile: '2.5k',
         views: '1.1k',
         likes: '3.0k',
@@ -22,7 +22,7 @@ const data = [
     {
         id: 3,
         course: 'Web Design',
-        price :'$120',
+        price :'$90',
         profile :'2.5k',
         views :'1.1k',
         likes: '3.0k',
@@ -42,7 +42,7 @@ const data = [
     {
         id: 5,
         course: 'Web Design',
-        price: '$78',
+        price: '$70',
         profile: '2.5k',
         views: '1.1k',
         likes: '3.0k',
@@ -52,7 +52,7 @@ const data = [
     {
         id: 6,
         course: 'Web Design',
-        price: '$110',
+        price: '$120',
         profile: '2.5k',
         views: '1.1k',
         likes: '3.0k',
@@ -62,4 +62,4 @@ const data = [
 
 ]
 
-export default data
+export default discountedData

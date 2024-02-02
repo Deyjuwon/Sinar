@@ -1,19 +1,18 @@
-import React from 'react'
+import React, { useId } from 'react'
 import CourseCard from './CourseCard'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import data  from '../data';
+import discountedData  from '../discountedData';
 
 
-const PopularCourses = () => {
-
+const Discounted = () => {
 
   return (
-    <div className='mt-20 ml-6'>
-        <p className=' font-medium text-2xl pb-6 '>Most popular courses</p>
+    <div className='mt-14 ml-6'>
+        <p className=' font-medium text-2xl pb-6 '>Discounted trainings</p>
 
         <Swiper
             spaceBetween={200}
@@ -23,9 +22,9 @@ const PopularCourses = () => {
             >
             
             <div className=''>
-                {data.map((item, index) => 
+                {discountedData.map((item) => 
                 <SwiperSlide>
-                    <CourseCard key={index}  course={item.course} description={item.description} likes={item.likes} profile={item.profile} views={item.views} price={item.price}  /> 
+                    <CourseCard keys={item.id}  course={item.course} description={item.description} likes={item.likes} profile={item.profile} views={item.views} price={item.price}  /> 
                 </SwiperSlide>
                         
                     )}
@@ -42,4 +41,4 @@ const PopularCourses = () => {
   )
 }
 
-export default PopularCourses
+export default Discounted
