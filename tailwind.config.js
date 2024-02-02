@@ -9,6 +9,7 @@ export default {
       colors: {
         'dirty-white': '#F5F5F5',
         'sinarpurple': '#896CF9',
+        'sinarblue': '#56C6E7',
       },
       fontSize: {
         '28s': '28px',
