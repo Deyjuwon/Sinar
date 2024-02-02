@@ -5,6 +5,7 @@ import Discover from '../Components/Discover'
 import StartTraining from '../Components/StartTraining'
 import PopularCourses from '../Components/PopularCourses'
 import Discounted from '../Components/Discounted'
+import Acheivement from '../Components/Acheivement'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <StartTraining />
         <PopularCourses />
         <Discounted />
+        <Acheivement />
     </div>
   )
 }
