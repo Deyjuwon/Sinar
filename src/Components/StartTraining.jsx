@@ -32,7 +32,7 @@ const StartTraining = () => {
       </ul>
 
       <h1 className='font-medium text-28s text-center pb-3 pt-6 '>Start training with the <br /> <span className='bg-gradient-to-r from-sinarpurple to-sinarblue inline-block text-transparent bg-clip-text'>professional</span> team</h1>
-      <p className='font-medium text-base pb-3 px-7 '>Come on, it's time to stat training now!</p>
+      <p className='font-medium text-base pb-3 px-7 '>Come on, it's time to start training now!</p>
       <div>
         <Button name='Start training' />
       </div>
