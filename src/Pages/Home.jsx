@@ -7,6 +7,7 @@ import PopularCourses from '../Components/PopularCourses'
 import Discounted from '../Components/Discounted'
 import Acheivement from '../Components/Acheivement'
 import LivePanel from '../Components/LivePanel'
+import Testimonial from '../Components/Testimonial'
 
 const Home = () => {
   return (
@@ -20,7 +21,8 @@ const Home = () => {
         <PopularCourses />
         <Discounted />
         <Acheivement />
-        <LivePanel />
+        {/* <LivePanel /> */}
+        <Testimonial />
     </div>
   )
 }

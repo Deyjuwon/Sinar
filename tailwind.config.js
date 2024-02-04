@@ -10,6 +10,7 @@ export default {
         'dirty-white': '#F5F5F5',
         'sinarpurple': '#896CF9',
         'sinarblue': '#56C6E7',
+        'bg2': '#F5F5F5'
       },
       fontSize: {
         '28s': '28px',
@@ -21,6 +22,7 @@ export default {
         '266': '266px',
         '116': '116px',
         '390': '390px',
+        '213': '213px'
       },
       height: {
         '498': '498px',
