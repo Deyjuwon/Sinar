@@ -5,7 +5,7 @@ import ellipse13 from '../assets/Ellipse 13.png'
 
 const Testimonial = () => {
   return (
-    <div className='bg-bg2 relative mt-16 flex flex-col justify-center items-center'>
+    <div className='relative mt-16 flex flex-col justify-center items-center'>
         <p className='pb-7 text-sm'>Testimonial</p>
         <h1 className='font-semibold text-2xl text-center pb-8'>What Our Client Says <br /> About Us</h1>
         <img src={people} alt="" />

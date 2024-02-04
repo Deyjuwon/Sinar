@@ -10,7 +10,9 @@ export default {
         'dirty-white': '#F5F5F5',
         'sinarpurple': '#896CF9',
         'sinarblue': '#56C6E7',
-        'bg2': '#F5F5F5'
+        'bg2': '#F5F5F5',
+        'bgstart': '#F5EEFF',
+        'bgend': '#DCF5FF'
       },
       fontSize: {
         '28s': '28px',

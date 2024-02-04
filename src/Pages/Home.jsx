@@ -11,7 +11,7 @@ import Testimonial from '../Components/Testimonial'
 
 const Home = () => {
   return (
-    <div className='bg-blue-200'>
+    <div className=' bg-gradient-to-b from-bgstart to-bgend'>
      
         <Header />
         <Hero />
