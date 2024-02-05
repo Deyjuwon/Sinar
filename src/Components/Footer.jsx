@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='flex flex-col justify-center items-center mt-4 gap-3'>
             <p className='font-medium text-base'>Subscribe For Updates</p>
             <form action="">
-                <input type="email" placeholder='Email' className='w-52 h-11 bg-transparent pl-4 border border-gray-400 rounded-tl-xl rounded-bl-xl' />
+                <input type="email" placeholder='Email' className='w-52 h-14 bg-transparent pl-4 border border-gray-400 rounded-tl-xl rounded-bl-xl' />
                 <Button name='Subscribe' />
             </form>
             <p className='text-center w-3/4 font-medium text-xs  text-gray-400'>by subscribing you will be able to hear the latest
