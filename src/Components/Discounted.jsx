@@ -1,9 +1,6 @@
 import React from 'react'
 import CourseCard from './CourseCard'
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import discountedData  from '../discountedData';
 
@@ -24,7 +21,14 @@ const Discounted = () => {
             <div className=''>
                 {discountedData.map((item) => 
                 <SwiperSlide key={item.id}>
-                    <CourseCard   course={item.course} description={item.description} likes={item.likes} profile={item.profile} views={item.views} price={item.price}  /> 
+                    <CourseCard   
+                      course={item.course} 
+                      description={item.description} 
+                      likes={item.likes} 
+                      profile={item.profile} 
+                      views={item.views} 
+                      price={item.price}  
+                      /> 
                 </SwiperSlide>
                         
                     )}
