@@ -9,13 +9,13 @@ function App() {
 
 
   return (
-    <>
+    <div className='bg-gradient-to-b from-bgstart  to-bg2'>
       <Routes>
         <Route path="/" element={<Home />} />
 
         
       </Routes>
-    </>
+    </div>
     
   )
 }

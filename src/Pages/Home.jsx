@@ -8,10 +8,11 @@ import Discounted from '../Components/Discounted'
 import Acheivement from '../Components/Acheivement'
 import LivePanel from '../Components/LivePanel'
 import Testimonial from '../Components/Testimonial'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
-    <div className=' bg-gradient-to-b from-bgstart to-bgend'>
+    <div className=' '>
      
         <Header />
         <Hero />
@@ -23,6 +24,7 @@ const Home = () => {
         <Acheivement />
         {/* <LivePanel /> */}
         <Testimonial />
+        <Footer />
     </div>
   )
 }
