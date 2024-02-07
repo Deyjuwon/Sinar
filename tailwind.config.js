@@ -13,7 +13,8 @@ export default {
         'bg2': '#F5F5F5',
         'bgstart': '#F5EEFF',
         'bgend': '#DCF5FF',
-        'bg3': '#E9F1FF'
+        'bg3': '#E9F1FF',
+        'btnBlue': '#252739',
       },
       fontSize: {
         '28s': '28px',
