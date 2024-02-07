@@ -12,7 +12,7 @@ import like from '../assets/like.png';
 const CourseCard = (props) => {
   return (
     <div className='bg-white  w-266 h-379 flex flex-col gap-5  px-4 rounded-xl pt-5 pb-0'>
-        <img src={rec49} alt=""  />
+        <img src={props.img_} alt=""  />
         <img src={baghappy} alt="" className='absolute hidden' />
         <div className='flex items-center justify-between'>
             <div className='bg-dirty-white w-116 h-10 border shadow-lg  flex gap-3 items-center justify-center rounded-xl'>

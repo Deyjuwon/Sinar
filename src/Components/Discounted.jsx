@@ -27,7 +27,8 @@ const Discounted = () => {
                       likes={item.likes} 
                       profile={item.profile} 
                       views={item.views} 
-                      price={item.price}  
+                      price={item.price}
+                      img_={item.img_}  
                       /> 
                 </SwiperSlide>
                         
