@@ -12,33 +12,33 @@ const Discounted = () => {
         <p className=' font-medium text-2xl pb-6 '>Discounted trainings</p>
 
         <Swiper
-            spaceBetween={50}
+            spaceBetween={200}
             slidesPerView={2}
-            breakpoints={
-              {
-                480: {
-                    slidesPerView: 1,
+            // breakpoints={
+            //   {
+            //     480: {
+            //         slidesPerView: 1,
                
-                },
-                600: {
-                    slidesPerView: 2
-                },
-                750: {
-                    slidesPerView: 3
-                },
-                1100: {
-                    slidesPerView: 4
-                }
+            //     },
+            //     600: {
+            //         slidesPerView: 2
+            //     },
+            //     750: {
+            //         slidesPerView: 3
+            //     },
+            //     1100: {
+            //         slidesPerView: 4
+            //     }
         
-            }
-            }
+            // }
+            // }
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             >
             
             <div className=''>
                 {discountedData.map((item) => 
-                <SwiperSlide key={item.id} className='pr-64'>
+                <SwiperSlide key={item.id} className=''>
                     <CourseCard   
                       course={item.course} 
                       description={item.description} 
