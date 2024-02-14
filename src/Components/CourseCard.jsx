@@ -11,7 +11,7 @@ import like from '../assets/like.png';
 
 const CourseCard = (props) => {
   return (
-    <div className='bg-white  w-full h-379 flex flex-col gap-5  px-4 rounded-xl pt-5 pb-0'>
+    <div className='bg-white  w-full h-379 flex flex-col gap-5  px-4 rounded-xl pt-5 pb-0 mr-2'>
         <img src={props.img_} alt=""  />
         <img src={baghappy} alt="" className='absolute hidden' />
         <div className='flex items-center justify-between gap-10'>
