@@ -13,7 +13,7 @@ function App() {
     <div className='bg-gradient-to-b from-bgstart  to-bg2'>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/courses' element={<Courses />} />
+        <Route path="/courses" element={<Courses />} />
 
         
       </Routes>
