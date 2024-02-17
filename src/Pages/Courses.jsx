@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import CourseSearch from '../Components/CourseSearch'
 import CourseDetails from '../Components/CourseDetails'
+import ListCourses from '../Components/ListCourses'
 
 const Courses = () => {
   return (
@@ -9,6 +10,7 @@ const Courses = () => {
         <Header />
         <CourseSearch />
         <CourseDetails />
+        <ListCourses />
     </div>
   )
 }
