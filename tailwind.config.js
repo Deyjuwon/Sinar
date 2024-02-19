@@ -15,11 +15,14 @@ export default {
         'bgend': '#DCF5FF',
         'bg3': '#E9F1FF',
         'btnBlue': '#252739',
+        'bg-purple': '#8A6CF9',
+        'bg-blue': '#56C6E7'
       },
       fontSize: {
         '28s': '28px',
         '32': '32px',
         '11': '11px',
+        '22': '22px',
       },
       width: {
         '358': '358px',
