@@ -21,6 +21,8 @@ export default {
         'disc2': '#E9F1FF',
         'disc3': '#E4F3FF',
         'disc4': '#DCF5FF',
+        'disc-blue': '#F7F8FD',
+        'black-txt': '#0D154B',
       },
       fontSize: {
         '28s': '28px',
