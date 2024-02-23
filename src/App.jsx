@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import './App.css'
 import Courses from './Pages/Courses';
 import DiscoverPage from './Pages/DiscoverPage';
+import FeedbackPage from './Pages/FeedbackPage';
 
 
 
@@ -16,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path='/discover' element={<DiscoverPage />} />
+        <Route path='/feedback' element={<FeedbackPage />} />
+        
 
         
       </Routes>
