@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Feedback = () => {
   return (
@@ -16,6 +17,14 @@ const Feedback = () => {
           <div className='rounded-full h-14 w-14 flex justify-center items-center border border-gray-400 text-black-txt text-2xl'>9</div>
           <div className='rounded-full h-14 w-14 flex justify-center items-center border border-gray-400 text-black-txt text-2xl'>10</div>
         </div>
+        <div className='relative'>
+          <input placeholder='' type="text" className='h-20 w-full border border-gray-400 rounded-xl' />
+          <div className='absolute top-3 right-4'>
+            <Button name="Send" />
+          </div>
+          
+        </div>
+        
         
     </div>
   )
