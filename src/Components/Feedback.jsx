@@ -1,10 +1,13 @@
 import React from 'react'
 import Button from './Button'
+import feedImg from '../assets/review 1.png'
 
 const Feedback = () => {
   return (
-    <div className='bg-white w-full text-center p-5  h-screen flex flex-col gap-6'>
-        <p className='text-base text-black-txt text-center px-10'>How likely are you to recommend UI Design Daily to your colleagues?</p>
+    <div className='bg-white w-full text-center p-5  h-screen flex flex-col gap-6 relative pt-24'>
+      <img src={feedImg} alt="" className='absolute top-10' />
+        <p className='text-base font-medium text-black-txt text-center px-10'>How likely are you to recommend UI Design Daily to your colleagues?</p>
+        
         <div className='flex gap-4 flex-wrap justify-center'>
           <div className='rounded-full h-14 w-14 flex justify-center items-center border border-gray-400 text-black-txt text-2xl'>1</div>
           <div className='rounded-full h-14 w-14 flex justify-center items-center border border-gray-400 text-black-txt text-2xl'>2</div>
@@ -22,6 +25,7 @@ const Feedback = () => {
           <div className='absolute top-3 right-4'>
             <Button name="Send" />
           </div>
+          
           
         </div>
         
