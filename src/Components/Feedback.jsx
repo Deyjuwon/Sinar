@@ -4,7 +4,7 @@ import feedImg from '../assets/review 1.png'
 
 const Feedback = () => {
   return (
-    <div className='bg-white w-full text-center p-5  h-screen flex flex-col gap-7 relative pt-24'>
+    <div className='bg-white w-full text-center p-6  h-screen flex flex-col gap-7 relative pt-24'>
       <img src={feedImg} alt="" className='absolute top-10' />
         <p className='text-base font-medium text-black-txt text-center px-10'>How likely are you to recommend UI Design Daily to your colleagues?</p>
         
