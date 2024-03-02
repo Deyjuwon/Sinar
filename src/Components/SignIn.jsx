@@ -19,10 +19,10 @@ const SignIn = () => {
         </button>
         <div>
           <form action="" className='flex flex-col '>
-            <label className='text-blue-txt text-sm' htmlFor="">Email</label>
-            <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4' type="email" />
-            <label className='text-blue-txt text-sm' htmlFor="">Password</label>
-            <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8' type="password" />
+            <label className='text-blue-txt text-sm pb-1' htmlFor="">Email</label>
+            <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none' type="email" />
+            <label className='text-blue-txt text-sm pb-1' htmlFor="">Password</label>
+            <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8 outline-none' type="password" />
             <Button name='Login' />
           </form>
         </div>
