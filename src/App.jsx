@@ -5,6 +5,7 @@ import './App.css'
 import Courses from './Pages/Courses';
 import DiscoverPage from './Pages/DiscoverPage';
 import FeedbackPage from './Pages/FeedbackPage';
+import Login from './Pages/Login';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path='/discover' element={<DiscoverPage />} />
         <Route path='/feedback' element={<FeedbackPage />} />
+        <Route path='/login' element={<Login />} />
         
 
         

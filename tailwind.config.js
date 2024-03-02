@@ -24,6 +24,7 @@ export default {
         'disc4': '#DCF5FF',
         'disc-blue': '#F7F8FD',
         'black-txt': '#0D154B',
+        'blue-txt': '#0D154B',
         
       },
       fontSize: {
