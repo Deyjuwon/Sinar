@@ -13,7 +13,7 @@ const SignIn = () => {
 
       </div>
         
-        <button className='w-full bg-white border border-gray-300 h-14 flex items-center gap-3 justify-center rounded-xl'> 
+        <button className='w-full bg-white border border-gray-300 min-h-14 flex items-center gap-3 justify-center rounded-xl'> 
           <span><img src={google} alt="" /></span>
           <span className='text-blue-txt text-sm font-semibold'>Continue with Google</span>
         </button>
