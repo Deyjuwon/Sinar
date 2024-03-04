@@ -44,15 +44,15 @@ const Account = () => {
         <div>
             <form action="" className='flex flex-col '>
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">Name</label>
-                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="text" placeholder='Enter email...' />
+                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="text" placeholder='' />
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">Country</label>
-                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8 outline-none pl-3' type="text" placeholder='Enter password...' />
+                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8 outline-none pl-3' type="text" placeholder='Ent' />
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">Email Address</label>
-                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="email" placeholder='Enter email...' />
+                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="email" placeholder='' />
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">New password</label>
-                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="password" placeholder='Enter email...' />
+                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="password" placeholder='' />
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">New password repeat</label>
-                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="password" placeholder='Enter email...' />
+                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="password" placeholder='' />
                 <Button name='Change password' />
             </form>
         </div>
