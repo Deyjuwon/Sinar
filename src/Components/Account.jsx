@@ -46,7 +46,7 @@ const Account = () => {
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">Name</label>
                 <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="text" placeholder='' />
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">Country</label>
-                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8 outline-none pl-3' type="text" placeholder='Ent' />
+                <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8 outline-none pl-3' type="text" placeholder='' />
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">Email Address</label>
                 <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="email" placeholder='' />
                 <label className='text-blue-txt text-sm pb-1' htmlFor="">New password</label>
