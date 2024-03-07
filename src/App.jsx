@@ -7,6 +7,7 @@ import DiscoverPage from './Pages/DiscoverPage';
 import FeedbackPage from './Pages/FeedbackPage';
 import Login from './Pages/Login';
 import AccountPage from './Pages/AccountPage';
+import PaymentPanelPage from './Pages/PaymentPanelPage';
 
 
 
@@ -22,6 +23,9 @@ function App() {
         <Route path='/feedback' element={<FeedbackPage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/account' element={<AccountPage />} />
+        <Route path='/PaymentPanel' element={<PaymentPanelPage />} />
+
+        
 
         
 
