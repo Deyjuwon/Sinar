@@ -9,7 +9,7 @@ const NotificationHeader = () => {
     const [isOpened, setIsOpened] = useState(false)
   return (
     <>
-        <header className='w-full  h-32  flex items-center justify-between p-4'>
+        <header className='w-full  h-32  flex items-center justify-between'>
 
                     {isOpened ? <div className='bg-white rounded-full flex items-center justify-center h-11 w-11'><IoMdClose className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div> : <div className='bg-white rounded-full flex items-center justify-center h-11 w-11'><RxHamburgerMenu className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div>}
                     <div>

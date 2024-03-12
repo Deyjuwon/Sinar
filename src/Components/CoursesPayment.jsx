@@ -14,7 +14,7 @@ const CoursesPayment = () => {
   return (
     <div className=' px-4'>
         <NotificationHeader />
-        <div className='flex gap-4 items-center p-4 '>
+        <div className='flex gap-4 items-center py-4 '>
             <img src={backIcon} alt="" className='' />
             <p className='text-base font-medium'>Turn Back</p>
         
