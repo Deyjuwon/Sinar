@@ -27,9 +27,9 @@ const CoursesPayment = () => {
           <p className='text-22 text-btnBlue '>Payment Details</p>
           <p className='text-gray-600 pb-6 text-sm '>Complete Your Purchase By Providing Your Payment Details.</p>
           <div className='flex justify-between'>
-            <img src={master} alt="" />
-            <img src={visa} alt="" />
-            <img src={paypal} alt="" />
+            <img src={master} alt="" className='w-111 h-69' />
+            <img src={visa} alt="" className='w-111 h-69'  />
+            <img src={paypal} alt="" className='w-111 h-69' />
           </div>
           <div>
           <form action="" className='flex flex-col '>

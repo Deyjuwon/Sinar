@@ -10,6 +10,7 @@ export default {
         'dirty-white': '#F5F5F5',
         'sinarpurple': '#896CF9',
         'sinarblue': '#56C6E7',
+        'sinarblue2': '#6F48FC',
         'bg2': '#F5F5F5',
         'bgstart': '#F5EEFF',
         'bgend': '#DCF5FF',
@@ -32,7 +33,9 @@ export default {
         '32': '32px',
         '11': '11px',
         '22': '22px',
-        '6': '6px'
+        '6': '6px',
+        '45': '45px',
+        '16': '16px',
       },
       width: {
         '358': '358px',
@@ -41,6 +44,8 @@ export default {
         '390': '390px',
         '213': '213px',
         '358': '358px',
+        '111': '111px',
+
       
       },
       height: {
@@ -48,6 +53,7 @@ export default {
         '379': '379px',
         '362': '362px',
         '284': '284px',
+        '69': '69px',
         
       }
     },

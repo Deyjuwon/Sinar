@@ -9,25 +9,25 @@ import Button from './Button';
 
 const StartTraining = () => {
   return (
-    <div className='bg-white  w-358 h-498  flex flex-col m-auto rounded-md text-center border '>
+    <div className='bg-white  w-358 h-498  flex flex-col m-auto rounded-md text-center border md:w-4/5'>
       <ul className='flex flex-wrap justify-center items-center bg-white pt-2'>
         <li>
-          <img src={rec45} alt="Rectangle 45" />
+          <img src={rec45} alt="Rectangle 45" className='' />
         </li>
         <li>
-          <img src={rec46} alt="Rectangle 46" />
+          <img src={rec46} alt="Rectangle 46" className='' />
         </li>
         <li>
-          <img src={rec43} alt="Rectangle 43" />
+          <img src={rec43} alt="Rectangle 43" className='' />
         </li>
         <li>
-          <img src={rec47} alt="Rectangle 47" />
+          <img src={rec47} alt="Rectangle 47" className='' />
         </li>
         <li>
-          <img src={rec48} alt="Rectangle 48" />
+          <img src={rec48} alt="Rectangle 48" className='' />
         </li>
         <li>
-          <img src={rec44} alt="Rectangle 44" />
+          <img src={rec44} alt="Rectangle 44" className='' />
         </li>
       </ul>
 
