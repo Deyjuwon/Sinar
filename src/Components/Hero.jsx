@@ -4,7 +4,7 @@ import Button from './Button'
 const Hero = () => {
   return (
     <section className='flex justify-center items-center flex-col px-6 pt-6'>
-        <p className='font-semibold text-2xl pb-4 flex flex-col items-center justify-center  md:text-45 md:gap-4'>
+        <p className='font-semibold text-2xl pb-4 flex flex-col items-center justify-center  md:text-57 md:gap-7'>
           <span>Unlock your potential with</span>
           <span className=' bg-gradient-to-r from-sinarblue2 via-sinarpurple to-sinarblue text-transparent bg-clip-text  md:text-45'>Sinar Education</span>
         </p>
