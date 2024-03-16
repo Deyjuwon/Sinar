@@ -33,7 +33,9 @@ const Header = () => {
         </div>
         <div className='flex items-center gap-8'>
             <div className='hidden md:flex items-center gap-2'>
-                <button className='w-24 h-11 bg-transparent rounded-xl font-medium cursor-pointer'>Log in</button>
+                <div>
+                    <Link to='/login' className='w-24 h-11 bg-transparent rounded-xl font-medium cursor-pointer'>Log in</Link>
+                </div>
                 <button className='w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer'>Sign Up</button>
             </div>
             
