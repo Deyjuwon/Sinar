@@ -10,12 +10,12 @@ const Acheivement = () => {
         <div className='flex flex-col items-center md:flex-row md:gap-10'>
             <div className='flex gap-4 items-center'>
                 <div className='flex flex-col items-center'>
-                    <p className='font-semibold text-32 bg-gradient-to-r from-sinarpurple to-sinarblue inline-block text-transparent bg-clip-text'>3000+</p>
+                    <p className='font-semibold text-32 bg-gradient-to-r from-sinarpurple to-sinarblue inline-block text-transparent bg-clip-text'>4000+</p>
                     <p className='font-medium text-sm'>Learners</p>
                 </div>
                 <img src={sugarCube} alt="" className='w-11 h-11' />
                 <div className='flex flex-col items-center'>
-                    <p className='font-semibold text-32  bg-gradient-to-r from-sinarpurple to-sinarblue inline-block text-transparent bg-clip-text'>100+</p>
+                    <p className='font-semibold text-32  bg-gradient-to-r from-sinarpurple to-sinarblue inline-block text-transparent bg-clip-text'>150+</p>
                     <p className='font-medium text-sm'>Courses</p>
                 </div>
             </div>
