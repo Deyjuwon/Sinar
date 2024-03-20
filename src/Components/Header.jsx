@@ -41,7 +41,7 @@ const Header = () => {
             
             {isOpened ? <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden'><IoMdClose className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div> : <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden'><RxHamburgerMenu className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div>}
         </div>
-        <div></div>
+       
         
     </header>
   )
