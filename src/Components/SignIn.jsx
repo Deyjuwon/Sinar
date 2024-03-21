@@ -5,7 +5,7 @@ import google from '../assets/flat-color-icons_google.png'
 
 const SignIn = () => {
   return (
-    <div className='h-screen pt-36 flex flex-col  gap-5 p-4'>
+    <div className='h-screen pt-32 flex flex-col  gap-5 p-4 pb-10 md:bg-white md:h-full md:pt-20'>
       <div className='flex flex-col items-center gap-4'> 
         <img src={logo} alt=""  />
         <h1 className=' text-3xl text-blue-txt font-medium'>Welcome back</h1>
