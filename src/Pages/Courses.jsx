@@ -8,9 +8,12 @@ const Courses = () => {
   return (
     <div>
         <Header />
-        <CourseSearch />
-        <CourseDetails />
-        <ListCourses />
+        <div className='md:w-3/4 md:m-auto'>
+          <CourseSearch />
+          <CourseDetails />
+          <ListCourses />
+        </div>
+        
     </div>
   )
 }
