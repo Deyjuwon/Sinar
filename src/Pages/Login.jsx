@@ -1,10 +1,10 @@
 import React from 'react'
 import SignIn from '../Components/SignIn'
 
-const Login = () => {
+const Login = ({setIsAuth}) => {
   return (
     <div className=' '>
-      <SignIn />
+      <SignIn setIsAuth={setIsAuth} />
     </div>
   )
 }

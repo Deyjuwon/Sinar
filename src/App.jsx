@@ -13,6 +13,8 @@ import PaymentPanelPage from './Pages/PaymentPanelPage';
 
 function App() {
 
+  const [isAuth, setIsAuth] = useState(false);
+
 
   return (
     <div className='bg-gradient-to-b from-bg4  to-bg2'>
@@ -21,7 +23,7 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path='/discover' element={<DiscoverPage />} />
         <Route path='/feedback' element={<FeedbackPage />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
         <Route path='/account' element={<AccountPage />} />
         <Route path='/PaymentPanel' element={<PaymentPanelPage />} />
 
