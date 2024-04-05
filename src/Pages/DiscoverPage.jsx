@@ -7,7 +7,7 @@ import DiscoverCourses from '../Components/DiscoverCourses'
 const DiscoverPage = () => {
 
   return (
-    <div className='pb-10 '>
+    <div className=''>
         <Header />
         <DiscoverHero />
         <DiscoverCourse />

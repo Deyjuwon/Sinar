@@ -25,7 +25,7 @@ const Header = () => {
             <ul className={isOpened ? 'bg-white flex flex-col gap-5 text-32 items-center h-screen absolute w-full top-0 pt-5 z-20 right-0 justify-center' : 'hidden md:flex text-16 font-medium items-center gap-10 text-gray-500  cursor-pointer'}>
                 {navItems.map((item, index) => (
                         <NavLink key={index} to={item.to}>
-                        <li className='hover:text-black'>{item.label}</li>
+                        <li className='hover:text-black' onClick={() => setIsOpened(!isOpened)}>{item.label}</li>
                         </NavLink>
                     ))}
             </ul>
