@@ -14,7 +14,7 @@ import PaymentPanelPage from './Pages/PaymentPanelPage';
 function App() {
 
   const [isAuth, setIsAuth] = useState(false);
-
+  
 
   return (
     <div className='bg-gradient-to-b from-bg4  to-bg2'>

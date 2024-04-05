@@ -17,12 +17,12 @@ const Header = () => {
     ];
 
   return (
-    <header className='w-full  h-32  flex items-center justify-between p-6'>
+    <header className='w-full  h-32  flex items-center justify-between p-6 relative'>
         <div>
             <img src={logo} alt="" className='h-16 w-32 object-contain ' />
         </div>
         <div>
-            <ul className='hidden md:flex text-16 font-medium items-center gap-10 text-gray-500  cursor-pointer'>
+            <ul className={isOpened ? 'bg-white flex flex-col gap-5 text-32 items-center h-screen absolute w-full top-0 pt-5 z-20 right-0 justify-center' : 'hidden md:flex text-16 font-medium items-center gap-10 text-gray-500  cursor-pointer'}>
                 {navItems.map((item, index) => (
                         <NavLink key={index} to={item.to}>
                         <li className='hover:text-black'>{item.label}</li>
@@ -39,7 +39,7 @@ const Header = () => {
                 <button className='w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer'>Sign Up</button>
             </div>
             
-            {isOpened ? <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden'><IoMdClose className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div> : <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden'><RxHamburgerMenu className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div>}
+            {isOpened ? <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden z-50'><IoMdClose className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div> : <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden'><RxHamburgerMenu className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div>}
         </div>
        
         
