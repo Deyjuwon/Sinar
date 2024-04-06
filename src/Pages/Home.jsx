@@ -10,11 +10,11 @@ import LivePanel from '../Components/LivePanel'
 import Testimonial from '../Components/Testimonial'
 import Footer from '../Components/Footer'
 
-const Home = () => {
+const Home = ( {isAuth, setIsAuth} ) => {
   return (
     <div className=' '>
      
-        <Header />
+        <Header isAuth={isAuth} setIsAuth={setIsAuth}  />
         <Hero />
         <Discover />
         

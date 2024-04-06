@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='bg-gradient-to-b from-bg4  to-bg2'>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home isAuth={isAuth} setIsAuth={setIsAuth}  />} />
         <Route path="/courses" element={<Courses />} />
         <Route path='/discover' element={<DiscoverPage />} />
         <Route path='/feedback' element={<FeedbackPage />} />
