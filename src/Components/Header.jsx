@@ -8,12 +8,9 @@ import { auth } from '../config/firebase-config'
 import { useNavigate } from 'react-router-dom';
 
 const Header = ({isAuth, setIsAuth}) => {
-
-
     let navigate = useNavigate()
-    
     const [isOpened, setIsOpened] = useState(false)
-
+    
     const logOut = () => {
         signOut(auth).then(() => {
             localStorage.clear()
@@ -52,7 +49,7 @@ const Header = ({isAuth, setIsAuth}) => {
                     <Link to='/login' className='w-24 h-11 bg-transparent rounded-xl font-medium cursor-pointer'>Log in</Link>
                 </div>
                 <button className='w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer'>Sign Up</button>
-            </div> : <button className='w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer' onClick={logOut}>Log Out</button>}
+            </div> : <button className='hidden md:block w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer' onClick={logOut}>Log Out</button>}
             
             
             {isOpened ? <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden z-50'><IoMdClose className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div> : <div className='bg-white rounded-full flex items-center justify-center h-11 w-11 md:hidden'><RxHamburgerMenu className='' size={25} onClick={() => setIsOpened(!isOpened)} /></div>}
