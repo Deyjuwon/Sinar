@@ -4,7 +4,7 @@ import logo from '../assets/sinarlogo.png'
 import google from '../assets/flat-color-icons_google.png'
 import { auth, provider } from '../config/firebase-config'
 import { signInWithPopup, createUserWithEmailAndPassword } from 'firebase/auth'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const SignIn = ({setIsAuth}) => {
 
@@ -63,7 +63,7 @@ const SignIn = ({setIsAuth}) => {
             </form>
           </div>
           
-          <p className='text-blue-txt text-sm text-center '>Dont have an account? <span className='font-bold text-blue-txt text-sm cursor-pointer'  >Sign up for Free</span></p>
+          <p className='text-blue-txt text-sm text-center '>Dont have an account? <span className='font-bold text-blue-txt text-sm cursor-pointer'  ><Link to='/signup'>Sign up for Free</Link></span></p>
         </div>
     </div>
   )
