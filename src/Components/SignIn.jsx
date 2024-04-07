@@ -1,20 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './Button'
 import logo from '../assets/sinarlogo.png'
 import google from '../assets/flat-color-icons_google.png'
 import { auth, provider } from '../config/firebase-config'
-import { signInWithPopup } from 'firebase/auth'
+import { signInWithPopup, createUserWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom';
 
 const SignIn = ({setIsAuth}) => {
 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  
   const Navigate = useNavigate();
+
   console.log(auth?.currentUser?.email)
+
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider).then((result) => {
       localStorage.setItem('isAuth', true)
       setIsAuth(true);
       Navigate('/')
+    })
+  }
+
+  const SignInWithEmailPassword = (e) => {
+    e.preventDefault()
+    createUserWithEmailAndPassword(auth, email, password).then((result) => {
+      localStorage.setItem('isAuth', true)
+      setIsAuth(true);
+      Navigate('/')
+      setEmail("")
+      setPassword("")
     })
   }
 
@@ -34,16 +51,19 @@ const SignIn = ({setIsAuth}) => {
             <span><img src={google} alt="" /></span>
             <span className='text-sm font-semibold '>Continue with Google</span>
           </button>
+
           <div>
             <form action="" className='flex flex-col'>
               <label className='text-blue-txt text-sm pb-1' htmlFor="">Email</label>
-              <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="email" placeholder='Enter email...' />
+              <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' type="email" placeholder='Enter email...' onChange={(e) => setEmail(e.target.value)} />
               <label className='text-blue-txt text-sm pb-1' htmlFor="">Password</label>
-              <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8 outline-none pl-3' type="password" placeholder='Enter password...' />
-              <Button name='Login' />
+              <input className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-8 outline-none pl-3' type="password" placeholder='Enter password...' onChange={(e) => setPassword(e.target.value)} />
+              <Button name='Login' onClick={SignInWithEmailPassword}  />
+          
             </form>
           </div>
-          <p className='text-blue-txt text-sm text-center '>Dont have an account? <span className='font-bold text-blue-txt text-sm '>Sign up for Free</span></p>
+          
+          <p className='text-blue-txt text-sm text-center '>Dont have an account? <span className='font-bold text-blue-txt text-sm cursor-pointer'  >Sign up for Free</span></p>
         </div>
     </div>
   )
