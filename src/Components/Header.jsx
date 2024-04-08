@@ -48,7 +48,7 @@ const Header = ({isAuth, setIsAuth}) => {
                 <div>
                     <Link to='/login' className='w-24 h-11 bg-transparent rounded-xl font-medium cursor-pointer'>Log in</Link>
                 </div>
-                <button className='w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer'>Sign Up</button>
+                <Link to='/signup' className='w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer flex items-center justify-center'>Sign Up</Link>
             </div> : <button className='hidden md:block w-24 h-11 bg-white rounded-xl font-medium border border-gray-300 cursor-pointer' onClick={logOut}>Log Out</button>}
             
             

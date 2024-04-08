@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import sapiens from '../assets/sapiens 1.png'
 import logo from '../assets/sinarlogo.png'
+import { Link } from 'react-router-dom'
+import intlTelInput from 'intl-tel-input';
+import 'intl-tel-input/build/css/intlTelInput.css';
 
 const SignUp = () => {
+  const [countryCode, setCountryCode] = useState('');
+
+  const handleChange = (e) => {
+    setCountryCode(e.target.value);
+  };
+
+  const handlePhoneInput = (input) => {
+    if (input) {
+      intlTelInput(input, {
+        initialCountry: countryCode || 'auto',
+        separateDialCode: true,
+        utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js' // Add the utils script URL
+      });
+    }
+  };
+
   return (
     <div className='p-6'>
         <div className='flex justify-between items-center'>
@@ -274,9 +293,26 @@ const SignUp = () => {
           <input type="text" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
           <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Confirm Paasword</label>
           <input type="password" placeholder='enter..' className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'/>
+          <div>
+            <select value={countryCode} className='hidden' onChange={handleChange}>
+              <option value="">Select Country Code</option>
+              <option value="us">United States (+1)</option>
+              <option value="gb">United Kingdom (+44)</option>
+              {/* Add more country options as needed */}
+            </select>
+            <input
+              ref={handlePhoneInput}
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter phone number"
+              className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'
+            />
+          </div>
+          
         </form>
         <div className='text-center pt-4'>
-          <p className='text-base font-medium'>Already have an account? <span className='text-base font-semibold'>Login</span></p>
+          <p className=' text-blue-txt text-sm text-center'>Already have an account? <span className='font-bold text-blue-txt text-sm'><Link to='/login' >Login</Link></span></p>
         </div>
     </div>
   )
