@@ -38,8 +38,12 @@ const SignUp = () => {
           <div>
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Full Name</label>
             <input type="text" placeholder='Enter...' className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
-            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold w-full'>Date of Birth</label>
-            <input type="date" name="" id=""  className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'/>
+            <div className='flex flex-col'>
+              <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold w-full'>Date of Birth</label>
+              <input type="date" name="" id=""  className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'/>
+
+            </div>
+            
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Nationality</label>
             <select id="country" name="country" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'>
                   <option value="Afghanistan">Afghanistan</option>
@@ -298,8 +302,12 @@ const SignUp = () => {
             <input type="text" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Confirm Paasword</label>
             <input type="password" placeholder='enter..' className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'/>
-            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Date of Birth</label>
-            <input type="date" name="" id=""  className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'/>
+            <div className='flex flex-col'>
+              <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Date of Birth</label>
+              <input type="date" name="" id=""  className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'/>
+
+            </div>
+            
             {/* <div>
               
               <select value={countryCode} className='hidden' onChange={handleChange}>
