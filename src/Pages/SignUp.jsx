@@ -38,7 +38,7 @@ const SignUp = () => {
           <div>
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Full Name</label>
             <input type="text" placeholder='Enter...' className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
-            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Date of Birth</label>
+            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold w-full'>Date of Birth</label>
             <input type="date" name="" id=""  className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'/>
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Nationality</label>
             <select id="country" name="country" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3'>
@@ -292,7 +292,7 @@ const SignUp = () => {
 
           </div>
           <div>
-            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Email</label>
+            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold ' placeholder='example@gmail.com'>Email</label>
             <input type="email" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Phone Number</label>
             <input type="text" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
