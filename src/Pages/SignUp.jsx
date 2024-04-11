@@ -296,8 +296,8 @@ const SignUp = () => {
 
           </div>
           <div>
-            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold ' placeholder='example@gmail.com'>Email</label>
-            <input type="email" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
+            <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold ' >Email</label>
+            <input  type="email" placeholder='example@gmail.com' className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Phone Number</label>
             <input type="text" className='w-full bg-white border border-gray-300 h-14 rounded-xl mb-4 outline-none pl-3' />
             <label htmlFor=""  className='text-blue-txt text-sm pb-1 font-semibold'>Confirm Paasword</label>

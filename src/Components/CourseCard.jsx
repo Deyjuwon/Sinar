@@ -11,11 +11,11 @@ import like from '../assets/like.png';
 
 const CourseCard = (props) => {
   return (
-    <div className='bg-white  w-full h-379 flex flex-col gap-5  px-4 rounded-xl pt-5 pb-0 mr-2'>
-        <img src={props.img_} alt=""  />
+    <div className='bg-white  w-full  flex flex-col gap-5  px-4 rounded-xl pt-5 pb-5 mr-2 h-fit'>
+        <img src={rec49} alt=""  />
         <img src={baghappy} alt="" className='absolute hidden' />
         <div className='flex items-center justify-between gap-10'>
-            <div className='bg-dirty-white w-116 h-10 border shadow-lg  flex gap-3 items-center justify-center rounded-xl'>
+            <div className='bg-dirty-white  min-w-28  h-10 border shadow-lg  flex gap-3 items-center justify-center rounded-xl'>
                 <img src={ellipse} alt="" className=' h-2 w-2'   />
                 <p className=' text-sm font-medium'>{props.course}</p>
             </div>
