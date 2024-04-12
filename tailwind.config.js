@@ -49,6 +49,9 @@ export default {
 
       
       },
+      minWidth: {
+        '266': '266px',
+      },
       height: {
         '498': '498px',
         '379': '379px',
