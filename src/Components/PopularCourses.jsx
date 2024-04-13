@@ -3,18 +3,24 @@ import CourseCard from './CourseCard';
 import data from '../data';
 import {db} from '../config/firebase-config'
 import { getDocs, collection } from 'firebase/firestore'
+import SkeletonElement from './Skeleton/SkeletonElement';
 
 const PopularCourses = () => {
   const [popularList, setPopularlist] = useState([])
   const popularCollectionRef = collection(db, 'PopularCourses')
+  const [loading, setLoading] = useState(false)
+
+
   useEffect (() => {
     const getPopularCourses  = async () =>{
       const data = await getDocs(popularCollectionRef);
 
       setPopularlist(data.docs.map((doc) => ({...doc.data(), id:doc.id})))
+      setLoading(true);
     };
     getPopularCourses()
-  })
+   
+  }, [])
 
   return (
     <div className='mt-20 ml-6'>
@@ -24,7 +30,7 @@ const PopularCourses = () => {
         className='flex gap-10 overflow-x-auto' // Flex container with horizontal scroll 
 >
 
-        {popularList.map((item, index) => (
+        {loading ? popularList.map((item, index) => (
           
             <CourseCard
               key={index}
@@ -36,7 +42,7 @@ const PopularCourses = () => {
               price={item.price}
               img_={item.img_}
             />
-              ))}
+              )) : [1,2,3, 4, 5, 6].map(n => <SkeletonElement key={n} />)}
       </div>
       
   
