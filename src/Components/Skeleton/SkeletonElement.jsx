@@ -1,10 +1,10 @@
 import React from 'react'
-
+import './SkeletonElement.css'
 import Shimmer from './Shimmer'
 
 const SkeletonElement = () => {
   return (
-    <div className='bg-white  min-w-266  flex flex-col gap-5  px-4 rounded-xl pt-5 pb-5 mr-2  h-fit'>
+    <div className='animate-pulse bg-white  min-w-266  flex flex-col gap-5  px-4 rounded-xl pt-5 pb-5 mr-2  h-fit'>
       
         <div className=' bg-gray-300 w-60 rounded-2xl h-36'></div>
         <img src='' alt="" className='absolute hidden' />
