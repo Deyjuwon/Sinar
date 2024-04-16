@@ -13,6 +13,7 @@ const PopularCourses = () => {
   useEffect (() => {
     const getPopularCourses  = async () =>{
       const data = await getDocs(popularCollectionRef);
+      console.log(popularList)
 
       setPopularlist(data.docs.map((doc) => ({...doc.data(), id:doc.id})))
       setLoading(true);
@@ -39,7 +40,7 @@ const PopularCourses = () => {
               profile={item.profile}
               views={item.views}
               price={item.price}
-              img_={item.img_}
+              img_={item.posterUrl}
             />
               )) : [1,2,3, 4, 5, 6].map(n => <SkeletonElement key={n} />)}
       </div>
