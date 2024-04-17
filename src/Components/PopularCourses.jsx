@@ -20,11 +20,11 @@ const PopularCourses = () => {
     };
     getPopularCourses()
    
-  }, [])
+  },)
 
   return (
     <div className='mt-20 ml-6'>
-      <p className='font-medium text-2xl pb-6'>Most popular courses</p>
+      <p className='font-medium text-2xl pb-6'>Most popular coursess</p>
 
       <div 
         className='flex gap-10 overflow-x-auto' // Flex container with horizontal scroll 
