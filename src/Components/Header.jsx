@@ -44,7 +44,7 @@ const Header = ({isAuth, setIsAuth}) => {
         </div>
         <div className='flex items-center gap-8'>
 
-            {!isAuth ? <div className=' md:flex items-center gap-2'>
+            {!isAuth ? <div className='hidden md:flex items-center gap-2'>
                 <div>
                     <Link to='/login' className='w-24 h-11 bg-transparent rounded-xl font-medium cursor-pointer'>Log in</Link>
                 </div>
