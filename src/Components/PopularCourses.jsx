@@ -20,7 +20,7 @@ const PopularCourses = () => {
     };
     getPopularCourses()
    
-  },)
+  }, [])
 
   return (
     <div className='mt-20 ml-6'>
