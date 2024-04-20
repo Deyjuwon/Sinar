@@ -9,7 +9,7 @@ import Login from './Pages/Login';
 import AccountPage from './Pages/AccountPage';
 import PaymentPanelPage from './Pages/PaymentPanelPage';
 import SignUp from './Pages/SignUp';
-
+import PremiumPage from './Pages/PremiumPage'
 
 
 function App() {
@@ -27,7 +27,9 @@ function App() {
         <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
         <Route path='/account' element={<AccountPage />} />
         <Route path='/PaymentPanel' element={<PaymentPanelPage />} />
-        <Route path='/signup' element={<SignUp />} />     
+        <Route path='/signup' element={<SignUp />} />    
+        <Route path='/Premium' element={<PremiumPage />} />
+        
 
         
 
