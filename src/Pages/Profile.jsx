@@ -16,7 +16,7 @@ const Profile = () => {
             <img className="h-10 rounded-full w-10 object-cover relative " src={proPic} alt="" />
             <img src={cam} className="absolute left-16 top-44" alt="" />
             <div className="flex flex-col gap-2">
-                <p className="text-sm ">Adejuwon Temitayo</p>
+                <p className="text-sm font-medium">Adejuwon Temitayo</p>
                 <span className="flex gap-2">
                     <img src={location} alt="" />
                     <p className="text-xs text-slate-500">Lagos / Nigeria</p>
@@ -30,7 +30,7 @@ const Profile = () => {
                 <div className="flex gap-5 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
-                        <p className="text-sm">UI/UX Design</p>
+                        <p className="text-sm font-medium">UI/UX Design</p>
                         <p className="text-xs text-slate-500">12/16 Lessons</p>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const Profile = () => {
                 <div className="flex gap-5 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
-                        <p className="text-sm">Business</p>
+                        <p className="text-sm font-medium">Business</p>
                         <p className="text-xs text-slate-500">6/16 Lessons</p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const Profile = () => {
                 <div className="flex gap-5 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
-                        <p className="text-sm">JavaScript</p>
+                        <p className="text-sm font-medium">JavaScript</p>
                         <p className="text-xs text-slate-500">12/16 Lessons</p>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ const Profile = () => {
                 <div className="flex gap-5 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
-                        <p className="text-sm">Music</p>
+                        <p className="text-sm font-medium">Music</p>
                         <p className="text-xs text-slate-500">5/16 Lessons</p>
                     </div>
                 </div>
