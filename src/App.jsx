@@ -10,6 +10,7 @@ import AccountPage from './Pages/AccountPage';
 import PaymentPanelPage from './Pages/PaymentPanelPage';
 import SignUp from './Pages/SignUp';
 import PremiumPage from './Pages/PremiumPage'
+import Profile from './Pages/Profile';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/PaymentPanel' element={<PaymentPanelPage />} />
         <Route path='/signup' element={<SignUp />} />    
         <Route path='/Premium' element={<PremiumPage />} />
+        <Route path='/profile' element={<Profile />} />
         
 
         
