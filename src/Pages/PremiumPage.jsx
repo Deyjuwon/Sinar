@@ -4,16 +4,20 @@ import backIcon from '../assets/Frame 45.png'
 import premiumlogo from '../assets/Frame 33666.png'
 import Button from '../Components/Button'
 import bagcheck from '../assets/solar_bag-check-bold.png'
+import Header from '../Components/Header'
 
 const PremiumPage = () => {
   return (
-    <div className='h-screen md:h-full pt-32 md:pt-0 flex flex-col gap-5 p-4 pb-20'> 
-      <div className='md:p-4 md:border md:border-gray-300 md:mt-20 md:w-3/4 md:h-fill md:m-auto md:bg-white md:rounded-xl flex flex-col gap-5'>
-        <div className='px-4'>
+    <div className=' md:h-full bg-white  md:pt-0 flex flex-col gap-5 pb-20'> 
+      <div className='hidden md:block'>
+        <Header />
+      </div>
+      <div className='md:p-4 md:border md:border-gray-300 md:mt-20 md:w-3/4 md:h-fill md:m-auto md:bg-white md:rounded-xl flex flex-col gap-5 '>
+        <div className='px-4 md:hidden' >
           <NotificationHeader />
         </div>
           
-        <div className='flex gap-4 items-center py-4 px-4'>
+        <div className='flex gap-4 items-center py-4 px-4 '>
             <img src={backIcon} alt="" className='' />
             <p className='text-base font-medium'>Turn Back</p>
         
