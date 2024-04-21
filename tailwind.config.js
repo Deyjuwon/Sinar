@@ -26,6 +26,11 @@ export default {
         'disc-blue': '#F7F8FD',
         'black-txt': '#0D154B',
         'blue-txt': '#0D154B',
+        'light-gray': '79757F',
+        'pink1': '#FFE5FF',
+        'pink2': '#FFE5FF',
+        'bg-gray': '#F7F8FD',
+        
         
       },
       fontSize: {
