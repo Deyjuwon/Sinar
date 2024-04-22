@@ -30,6 +30,10 @@ export default {
         'pink1': '#FFE5FF',
         'pink2': '#FFE5FF',
         'bg-gray': '#F7F8FD',
+        "prblue": "#56C6E7",
+        'prdark': "#252739",
+        'prgreen': "#02677D",
+        'prpurple': "#8A6CF9",
         
         
       },
@@ -49,7 +53,7 @@ export default {
         '116': '116px',
         '390': '390px',
         '213': '213px',
-        '358': '358px',
+       
         '111': '111px',
 
       

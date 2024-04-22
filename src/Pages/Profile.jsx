@@ -6,6 +6,8 @@ import progress from '../assets/Frame 33685.png'
 import cbanner from '../assets/Rectangle 59.png'
 import progress20 from '../assets/Frame 33685 (3).png'
 import progress18 from '../assets/Frame 33685 (4).png'
+import { ProgressBar } from "react-bootstrap"; 
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Profile = () => {
   return (
@@ -69,6 +71,25 @@ const Profile = () => {
                 </div>
                 <img src={progress18} alt="" />
 
+            </div>
+        </div>
+
+        <div>
+            <p>Course Topic</p>
+            <div className="">
+                <p>42</p>
+                <p>Total Course</p>
+                
+                <ProgressBar className='h-10'>
+                    <ProgressBar variant="" now={50} key={1} className='h-20 bg-prblue'  />
+                    <ProgressBar variant="" now={20} key={2} className='bg-prdark' />
+                    <ProgressBar  variant="" now={20} key={3} className='bg-prgreen' />
+                    <ProgressBar  variant="" now={20} key={3} className='bg-prpurple' />
+
+                </ProgressBar>
+                    
+                
+                
             </div>
         </div>
 
