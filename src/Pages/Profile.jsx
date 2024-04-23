@@ -8,6 +8,11 @@ import progress20 from '../assets/Frame 33685 (3).png'
 import progress18 from '../assets/Frame 33685 (4).png'
 import { ProgressBar } from "react-bootstrap"; 
 import "bootstrap/dist/css/bootstrap.min.css";
+import arrowup from '../assets/Directing the arrow up-cuate 1.png'
+import rec58 from '../assets/Rectangle 58.png'
+import rec581 from '../assets/Rectangle 58 (1).png'
+import rec582 from '../assets/Rectangle 58 (2).png'
+import rec583 from '../assets/Rectangle 58 (3).png'
 
 const Profile = () => {
   return (
@@ -75,18 +80,37 @@ const Profile = () => {
         </div>
 
         <div>
-            <p>Course Topic</p>
-            <div className="">
-                <p>42</p>
-                <p>Total Course</p>
+            <p className="text-2xl text-btnBlue mb-4">Course Topic</p>
+            <div className="border border-gray-300 rounded-lg w-full h-fit px-4 py-5 mb-5">
+                <p className="text-3xl text-btnBlue font-semibold">42</p>
+                <p className="pb-3">Total Course</p>
                 
-                <ProgressBar className='h-10'>
+                <ProgressBar className='h-10 '>
                     <ProgressBar variant="" now={50} key={1} className='h-20 bg-prblue'  />
                     <ProgressBar variant="" now={20} key={2} className='bg-prdark' />
                     <ProgressBar  variant="" now={20} key={3} className='bg-prgreen' />
                     <ProgressBar  variant="" now={20} key={3} className='bg-prpurple' />
 
                 </ProgressBar>
+                <img className="m-auto pt-3" src={arrowup} alt="" />
+                <div className="flex flex-col gap-3 pt-5">
+                    <div className="flex gap-3">
+                        <img src={rec58} alt="" />
+                        <p>UI/UX Design (%50)</p>
+                    </div>
+                    <div className="flex gap-3">
+                        <img src={rec581} alt="" />
+                        <p>Bussiness (%20)</p>
+                    </div>
+                    <div className="flex gap-3">
+                        <img src={rec582} alt="" />
+                        <p>Music (%20)</p>
+                    </div>
+                    <div className="flex gap-3">
+                        <img src={rec583} alt="" />
+                        <p>JavaScript (%20)</p>
+                    </div>
+                </div>
                     
                 
                 
