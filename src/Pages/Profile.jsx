@@ -95,19 +95,19 @@ const Profile = () => {
                 <img className="m-auto pt-3" src={arrowup} alt="" />
                 <div className="flex flex-col gap-3 pt-5">
                     <div className="flex gap-3">
-                        <img src={rec58} alt="" />
+                        <img className="object-cover" src={rec58} alt="" />
                         <p>UI/UX Design (%50)</p>
                     </div>
                     <div className="flex gap-3">
-                        <img src={rec581} alt="" />
+                        <img className="object-cover" src={rec581} alt="" />
                         <p>Bussiness (%20)</p>
                     </div>
                     <div className="flex gap-3">
-                        <img src={rec582} alt="" />
+                        <img className="object-cover" src={rec582} alt="" />
                         <p>Music (%20)</p>
                     </div>
                     <div className="flex gap-3">
-                        <img src={rec583} alt="" />
+                        <img className="object-cover"src={rec583} alt="" />
                         <p>JavaScript (%20)</p>
                     </div>
                 </div>
