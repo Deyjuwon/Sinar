@@ -13,6 +13,10 @@ import rec58 from '../assets/Rectangle 58.png'
 import rec581 from '../assets/Rectangle 58 (1).png'
 import rec582 from '../assets/Rectangle 58 (2).png'
 import rec583 from '../assets/Rectangle 58 (3).png'
+import ongoing from '../assets/Frame 33692.png'
+import complete from '../assets/Frame 33692 (1).png'
+import certificate from '../assets/Frame 33692 (2).png'
+import hourspent from '../assets/Frame 33692 (3).png'
 
 const Profile = () => {
   return (
@@ -93,7 +97,8 @@ const Profile = () => {
 
                 </ProgressBar>
                 <img className="m-auto pt-3" src={arrowup} alt="" />
-                <div className="flex flex-col gap-3 pt-5">
+                <div className="flex flex-col gap-3 p
+                t-5">
                     <div className="flex gap-3">
                         <img className="object-cover" src={rec58} alt="" />
                         <p>UI/UX Design (%50)</p>
@@ -116,6 +121,56 @@ const Profile = () => {
                 
             </div>
         </div>
+
+        <div className="pb-10">
+            <p className="text-2xl text-btnBlue pb-5">Dashboard</p>
+            <div className="flex flex-col gap-3">
+                <div className="flex gap-3">
+                    <div className="border border-gray-300 rounded-lg h-fit flex flex-col items-center justify-center py-4 gap-3 w-full">
+                        <div className="flex flex-col items-center justify-center gap-1">
+                            <img src={ongoing} alt="" />
+                            <p>Ongoing</p>
+                        </div>
+                        <p className="text-32 text-btnBlue">5</p>
+                    </div>
+                    <div className="border border-gray-300 rounded-lg h-fit flex flex-col items-center justify-center py-4 gap-3 w-full">
+                        <div className="flex flex-col items-center justify-center gap-1">
+                            <img src={complete} alt="" />
+                            <p>Complete</p>
+                        </div>
+                        <p className="text-32 text-btnBlue">25</p>
+
+                    </div>
+
+                </div>
+                <div className="flex gap-3">
+                    <div className="border border-gray-300 rounded-lg h-fit flex flex-col items-center justify-center py-4 gap-3 w-full">
+                            <div className="flex flex-col items-center justify-center gap-1">
+                                <img src={certificate} alt="" />
+                                <p>Certificate</p>
+                            </div>
+                            <p className="text-32 text-btnBlue">15</p>
+                        </div>
+                        <div className="border border-gray-300 rounded-lg h-fit flex flex-col items-center justify-center py-4 gap-3 w-full">
+                            <div className="flex flex-col items-center justify-center gap-1"> 
+                                <img src={hourspent} alt="" />
+                                <p>Hour Spent</p>
+                            </div>
+                            <p className="text-32 text-btnBlue">200</p>
+                        </div>
+
+                </div>
+
+                    
+                    </div>
+                
+                <div>
+
+                </div>
+                
+
+            </div>
+            
 
       </div>
       
