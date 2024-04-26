@@ -18,9 +18,10 @@ import complete from '../assets/Frame 33692 (1).png'
 import certificate from '../assets/Frame 33692 (2).png'
 import hourspent from '../assets/Frame 33692 (3).png'
 
+
 const Profile = () => {
   return (
-    <div className="px-4 bg-white">
+    <div className="px-4 bg-white">  
       <NotificationHeader />
       <div className="flex flex-col gap-10">
         <div className="flex gap-4 border border-gray-300 rounded-lg w-fit h-fit items-center p-4">
@@ -38,7 +39,7 @@ const Profile = () => {
         <div className="flex flex-col gap-5">
             <h1 className="text-2xl text-btnBlue ">Continue Learning</h1>
             <div className="flex justify-between border border-gray-300 rounded-lg w-full h-fit items-center p-6">
-                <div className="flex gap-5 items-center">
+                <div className="flex gap-4 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
                         <p className="text-sm font-medium">UI/UX Design</p>
@@ -49,7 +50,7 @@ const Profile = () => {
 
             </div>
             <div className="flex justify-between border border-gray-300 rounded-lg w-full h-fit items-center p-6">
-                <div className="flex gap-5 items-center">
+                <div className="flex gap-4 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
                         <p className="text-sm font-medium">Business</p>
@@ -60,7 +61,7 @@ const Profile = () => {
 
             </div>
             <div className="flex justify-between border border-gray-300 rounded-lg w-full h-fit items-center p-6">
-                <div className="flex gap-5 items-center">
+                <div className="flex gap-4 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
                         <p className="text-sm font-medium">JavaScript</p>
@@ -71,7 +72,7 @@ const Profile = () => {
 
             </div>
             <div className="flex justify-between border border-gray-300 rounded-lg w-full h-fit items-center p-6">
-                <div className="flex gap-5 items-center">
+                <div className="flex gap-4 items-center">
                     <img src={cbanner} alt="" />
                     <div className="flex flex-col gap-1">
                         <p className="text-sm font-medium">Music</p>
