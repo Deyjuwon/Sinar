@@ -106,7 +106,7 @@ const Profile = () => {
                     </div>
                     <div className="flex gap-3">
                         <img className="object-cover" src={rec581} alt="" />
-                        <p>Bussiness (%20)</p>
+                        <p>Business (%20)</p>
                     </div>
                     <div className="flex gap-3">
                         <img className="object-cover" src={rec582} alt="" />
