@@ -11,6 +11,7 @@ import PaymentPanelPage from './Pages/PaymentPanelPage';
 import SignUp from './Pages/SignUp';
 import PremiumPage from './Pages/PremiumPage'
 import Profile from './Pages/Profile';
+import Certificate from './Pages/Certificate';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/signup' element={<SignUp />} />    
         <Route path='/Premium' element={<PremiumPage />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/certificate' element={<Certificate />} />
         
 
         
