@@ -1,4 +1,3 @@
-import React from 'react'
 import NotificationHeader from '../Components/NotificationHeader'
 import backIcon from '../assets/Frame 45.png'
 import premiumlogo from '../assets/Frame 33666.png'

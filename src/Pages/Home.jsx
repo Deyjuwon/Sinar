@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+
 import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import Discover from '../Components/Discover'
