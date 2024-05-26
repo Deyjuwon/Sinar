@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+/* eslint-disable react/prop-types */
 import Button from './Button'
 import logo from '../assets/sinarlogo.png'
 import google from '../assets/flat-color-icons_google.png'
