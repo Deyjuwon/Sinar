@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import  { useState } from 'react'
 import Button from './Button'
 import logo from '../assets/sinarlogo.png'
 import google from '../assets/flat-color-icons_google.png'
@@ -47,7 +48,7 @@ const SignIn = ({setIsAuth}) => {
 
         </div>
           
-          <button className='w-full bg-white border border-gray-300 min-h-14 flex items-center gap-3 justify-center rounded-xl hover:bg-black text-blue-txt hover:text-white transition ' onClick={signInWithGoogle}> 
+          <button className='w-full bg-white border border-gray-300 min-h-14 flex items-center gap-3 justify-center rounded-xl text-blue-txt  hover:bg-black hover:text-white transition ' onClick={signInWithGoogle}> 
             <span><img src={google} alt="" /></span>
             <span className='text-sm font-semibold '>Continue with Google</span>
           </button>
