@@ -48,7 +48,7 @@ const SignIn = ({setIsAuth}) => {
 
         </div>
           
-          <button className='w-full bg-white border border-gray-300 min-h-14 flex items-center gap-3 justify-center rounded-xl text-blue-txt  hover:bg-black hover:text-white transition ' onClick={signInWithGoogle}> 
+          <button className='w-full bg-dirtyWhite border border-gray-300 min-h-14 flex items-center gap-3 justify-center rounded-xl text-blue-txt  hover:bg-btnBlue  hover:text-white transition ' onClick={signInWithGoogle}> 
             <span><img src={google} alt="" /></span>
             <span className='text-sm font-semibold '>Continue with Google</span>
           </button>
@@ -66,6 +66,8 @@ const SignIn = ({setIsAuth}) => {
           
           <p className='text-blue-txt text-sm text-center '>Dont have an account? <span className='font-bold text-blue-txt text-sm cursor-pointer'  ><Link to='/signup'>Sign up for Free</Link></span></p>
         </div>
+       
+
     </div>
   )
 }
